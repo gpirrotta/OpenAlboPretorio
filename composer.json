@@ -1,0 +1,26 @@
+{
+    "name": "gpirrotta/open-albo-pretorio",
+    "type" : "library",
+    "description": "Open Albo Pretorio",
+    "keyworkds": ["albo pretorio", "civic-hacking", "opengov", "scraping", "json", "rss", "atom"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Giovanni Pirrotta",
+            "email": "giovanni.pirrotta@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "zendframework/zend-feed": "2.2.*",
+        "zendframework/zend-servicemanager": "2.2.*",
+        "symfony/dom-crawler": "2.3.*",
+        "symfony/css-selector": "2.3.*"
+    },
+    "require-dev": {
+        "mockery/mockery": "0.8.*"
+    },
+    "autoload": {
+        "psr-0": { "GP": "src" }
+    }
+}
