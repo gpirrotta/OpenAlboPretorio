@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>ALBO PRETORIO ON-LINE</title>
+	<link rel="stylesheet" type="text/css" href="attoamministrativotv_files/style.css">
+	<script type="text/javascript" src="attoamministrativotv_files/text_dim.js"></script>
+
+
+<script language="JavaScript"> 
+function cancella_atto(idatto)  {
+			if(!confirm("Eliminare l'atto?")) {
+		      return true;
+		    }
+		    else {
+		    window.location="admin/cancella_atto.asp?idatto=" + idatto;
+		    return false;
+		    }
+        }
+</script>
+
+</head>
+
+<body background="attoamministrativotv_files/background.jpg">
+
+<table class="testonormale" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr valign="top">
+
+<td><img src="attoamministrativotv_files/templogo.jpg" alt="" border="0" height="123" width="587"></td>
+<td width="100%">
+  <p align="right"><b><font face="Calibri" size="1">
+                                                                                         
+	  <a href="admin/autenticazione.asp">LOG-IN</a>                                                                                      
+                                                                                                             
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="help.asp" target="_blank">AIUTO                                                
+  ONLINE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="info_accessibilita.asp" target="_blank">                                               
+  INFO ACCESSIBILITA'</a>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; <a href="#" onclick="changeFontSize(1); return false;" class="larger"><img style="border:0 margin:0 padding:0;" src="attoamministrativotv_files/resizer_01.jpg" alt="+"></a>                     
+<a href="#" onclick="changeFontSize(-1); return false;" class="smaller"><img style="border:0 margin:0 padding:0;" src="attoamministrativotv_files/resizer_02.jpg" alt="-"></a>                       
+<a href="#" onclick="revertStyles(); return false;" class="reset"><img style="border:0 margin:0 padding:0;" src="attoamministrativotv_files/resizer_03.jpg" alt="reset"></a>                       
+</font></b></p>                                                                                
+</td>
+</tr>
+</tbody></table>
+
+<table class="bgtopbar" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr valign="top">
+<td valign="middle" width="100%">
+  <p class="testonormale" align="left"><b>&nbsp; </b><a href="infoente.asp"><b>Informazioni sull'Ente</b></a><b>&nbsp;&nbsp;&nbsp;&nbsp;                                                                                      
+  |&nbsp;&nbsp;&nbsp;&nbsp; <a href="mappasito.asp">Mappa del sito</a>&nbsp;&nbsp;&nbsp;&nbsp;                                                                                      
+  |&nbsp;&nbsp;&nbsp;&nbsp; </b><a href="inviaemail.asp"><b>Invia                                                                                      
+  un e-mail all'ente</b></a></p>                                                                                     
+</td>
+</tr>
+</tbody></table>
+
+<table class="testonormale" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr valign="top">
+
+<td width="201"><br>
+&nbsp;»&nbsp;<a href="default.asp"><b>Home   
+  page</b></a><br>
+<img src="attoamministrativotv_files/menubar.jpg" alt="" border="0" height="11" width="201"><br>
+  &nbsp;»&nbsp;<a href="infoente.asp"><b>Informazioni sull'Ente</b></a><br>
+<img src="attoamministrativotv_files/menubar.jpg" alt="" border="0" height="11" width="201"><br>
+  &nbsp;»&nbsp;<a href="contatti.asp"><b>Contatti relativi
+  all'Ente</b></a><br>
+<img src="attoamministrativotv_files/menubar.jpg" alt="" border="0" height="11" width="201"><br>
+  &nbsp;»&nbsp;<a href="admin"><b>Amministrazione                                  
+  del Portale</b></a><br>                                  
+<img src="attoamministrativotv_files/menubar.jpg" alt="" border="0" height="11" width="201"><br>
+&nbsp;»&nbsp;<a href="ricerca_atti.asp"><b>Ricerca                                  
+  atti</b></a><br>
+  <img src="attoamministrativotv_files/menubar.jpg" alt="" border="0" height="11" width="201"><br>
+&nbsp;»&nbsp;<a href="ricerca_atti_tipologia.asp"><b>Ricerca                                  
+  per tipologia di atti</b></a><br>                                  
+<img src="attoamministrativotv_files/menubar.jpg" alt="" border="0" height="11" width="201"><br>
+&nbsp;»&nbsp;<a href="visualizza_atti_recenti.asp"><b>Visualizza                                  
+  atti recenti</b></a><br>                                  
+<img src="attoamministrativotv_files/menubar.jpg" alt="" border="0" height="11" width="201"><br>
+&nbsp;»&nbsp;<a href="atti_archivio.asp"><b>Archivio                                      
+  atti non in vigore</b></a><br>                                      
+<img src="attoamministrativotv_files/menubar.jpg" alt="" border="0" height="11" width="201"><br>
+</td>
+
+<td width="100%">
+	<table class="testonormale" border="0" cellpadding="10" cellspacing="0" width="100%">
+		<tbody><tr valign="top">
+			<td>
+
+<!--RISULTATI RICERCA-->
+
+ 
+
+<div align="center">
+    <table class="testonormale" border="0" cellpadding="0" cellspacing="0" width="80%">
+    <tbody><tr>
+      <td class="bgsxsup" height="1" valign="top" width="17">
+        <p align="left"></p></td>
+      <td class="bgvediattosup" height="1" valign="top" width="705">
+        &nbsp;</td>
+      <td class="bgdxsup" height="1" valign="top" width="19">
+        &nbsp;</td>
+    </tr>
+    <tr>
+      <td class="bgtablinesx" height="51" valign="top" width="17">
+        &nbsp;</td>
+      <td class="bgsfondotab" height="130" valign="top" width="705">
+ 
+
+
+
+<font face="Calibri" size="3">&nbsp;</font>
+
+<div align="center">
+  <center>
+  <center>
+
+
+    </center><table class="testonormale" border="0" cellpadding="3" cellspacing="0" width="100%">
+
+
+    <tbody><tr>
+      <td width="85%"><b>Numero atto/repertorio: </b>00004137</td>
+      <td width="40%">
+        &nbsp;</td>
+    </tr>
+
+
+    <tr>
+      <td width="85%"><b>Mittente:</b>   Comune di Terme Vigliatore</td>   
+  
+      <td width="40%">
+        <p align="right">del: 28/06/2013</p></td>                   
+    </tr>
+  <tr>
+      <td colspan="2" width="125%"><b>Validità di pubblicazione:</b> dal 28/06/2013 al 10/07/2013</td>   
+    </tr>
+
+    <tr>
+      <td colspan="2" width="125%"><b>Stato:</b> In corso di pubblicazione </td>   
+    </tr>
+    <tr>
+      <td colspan="2" width="125%"><b>Forma:</b> Integrale</td>   
+    </tr>
+    <tr>
+      <td colspan="2" width="125%"><b>Unità organizzativa responsabile: </b>Area Tecnica - Anagrafe - Stato Civile </td>   
+    </tr>
+    <tr>
+      <td colspan="2" width="125%"><b>Oggetto:</b> Pubblicazione di matrimonio Minnie e Topolino</td>
+    </tr>
+
+    <tr>
+      <td colspan="2" width="125%"><p align="justify"><b>Descrizione: </b>Pubblicazione di matrimonio Minnie/Topolino</p></td>
+    </tr>
+    <tr>
+      <td width="85%"><b>Tipologia:</b>&nbsp; <a href="ricerca_atti.asp?tipologia=7">Pubblicazioni di Matrimonio</a></td>                      
+  
+	
+      <td nowrap="nowrap" width="40%"> </td>
+    
+    </tr>
+    <tr>
+      <td colspan="2" class="bgtablineainf" width="100%"><font size="1">&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td colspan="2" bgcolor="#FFF4DF" width="100%">
+        <p align="center"><font size="2"><b>ALLEGATI COLLEGATI ALL'ATTO</b>:</font></p>       
+      </td>
+    </tr>
+
+    
+    <tr>
+      <td colspan="2" bgcolor="#FFFFDF" width="100%">&nbsp;&nbsp;<img src="attoamministrativotv_files/icona_pdf.jpg" alt="tipologia del documento allegato all'atto" align="absbottom" border="0" height="21" width="20">&nbsp;
+      
+		      <a href="public/4814_Pubblicazione di matrimonio Minnie_Topolino.pdf" target="_blank">Pubblicazione di matrimonio Nicosia_Accetta.pdf</a>
+		  
+      &nbsp;&nbsp;&nbsp;()<br>
+	  <font size="2">(Impronta del documento: 9f24d6acf358f50c95653185470170f9)</font></td>
+    </tr>
+    
+    <tr>
+      <td colspan="2" class="bgtablineainf" width="100%">&nbsp;</td>
+    </tr>
+
+  </tbody></table>
+</center></div>
+
+ 
+      </td>
+      <td class="bgtablinedx" height="26" valign="top" width="19">
+        &nbsp;</td>
+    </tr>
+    <tr>
+      <td class="bgsxinf" height="8" valign="top" width="17">
+        &nbsp;</td>
+      <td class="bgtablineainf" height="1" valign="top" width="705">
+        &nbsp;</td>
+      <td class="bgdxinf" height="21" valign="top" width="19">
+        &nbsp;</td>
+    </tr>
+  </tbody></table>
+
+</div>
+
+<!-- Fine risultato ricerca -->
+
+
+<div align="center">
+  &nbsp;
+</div>
+<div align="center">
+  <center>
+  <table class="testonormale" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody><tr>
+      <td class="bgtablineainf" height="1" width="100%">&nbsp;</td>
+    </tr>
+    <tr>
+      <td height="1" width="100%">
+        <div align="center">
+          <center>
+          <table class="testonormale" border="0" cellpadding="0" cellspacing="0" width="80">
+            <tbody><tr>
+              <td>
+                <table class="testonormale">
+                  <tbody><tr>
+                    <td valign="top"><img src="attoamministrativotv_files/valid-css.png" alt="VALID W3C CSS" height="15" width="80"></td>
+                    <td colspan="2" valign="top"><img src="attoamministrativotv_files/valid-xhtml11.png" alt="VALID W3C HTML4.1" height="15" width="87"></td>
+                    <td colspan="2" valign="top"><!--DWLayoutEmptyCell-->
+                    </td>
+                </tr></tbody></table>
+              </td>
+            </tr>
+          </tbody></table>
+          </center>
+        </div>
+      </td>
+    </tr>
+  </tbody></table>
+</center>
+</div>
+<p align="center"><font color="#808080" face="Calibri" size="1">© Sistemia srl</font></p>                       
+			</td>
+		</tr>
+	</tbody></table>
+</td>
+
+</tr>
+</tbody></table>
+
+
+
+
+
+
+
+
+
+</body></html>

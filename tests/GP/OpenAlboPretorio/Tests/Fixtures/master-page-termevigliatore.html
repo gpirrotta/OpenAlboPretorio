@@ -1,0 +1,617 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>SIS ALBO PRETORIO ON-LINE</title>
+	<link rel="stylesheet" type="text/css" href="albopaginatv_files/style.css">
+	<script type="text/javascript" src="albopaginatv_files/text_dim.js"></script>
+
+<script language="JavaScript"> 
+function cancella_atto(idatto)  {
+			if(!confirm("Eliminare l'atto?")) {
+		      return true;
+		    }
+		    else {
+		    window.location="admin/cancella_atto.asp?provenienza=ricerca_recenti&idatto=" + idatto;
+		    return false;
+		    }
+        }
+</script>
+
+<style type="text/css" charset="utf-8">/* See license.txt for terms of usage */
+/** reset styling **/
+.firebugResetStyles {
+    z-index: 2147483646 !important;
+    top: 0 !important;
+    left: 0 !important;
+    display: block !important;
+    border: 0 none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: 0 !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    position: fixed !important;
+    transform: rotate(0deg) !important;
+    transform-origin: 50% 50% !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: transparent none !important;
+    pointer-events: none !important;
+    white-space: normal !important;
+}
+
+.firebugBlockBackgroundColor {
+    background-color: transparent !important;
+}
+
+.firebugResetStyles:before, .firebugResetStyles:after {
+    content: "" !important;
+}
+/**actual styling to be modified by firebug theme**/
+.firebugCanvas {
+    display: none !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBox {
+    width: auto !important;
+    position: static !important;
+}
+
+.firebugLayoutBoxOffset {
+    opacity: 0.8 !important;
+    position: fixed !important;
+}
+
+.firebugLayoutLine {
+    opacity: 0.4 !important;
+    background-color: #000000 !important;
+}
+
+.firebugLayoutLineLeft, .firebugLayoutLineRight {
+    width: 1px !important;
+    height: 100% !important;
+}
+
+.firebugLayoutLineTop, .firebugLayoutLineBottom {
+    width: 100% !important;
+    height: 1px !important;
+}
+
+.firebugLayoutLineTop {
+    margin-top: -1px !important;
+    border-top: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineRight {
+    border-right: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineBottom {
+    border-bottom: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineLeft {
+    margin-left: -1px !important;
+    border-left: 1px solid #999999 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBoxParent {
+    border-top: 0 none !important;
+    border-right: 1px dashed #E00 !important;
+    border-bottom: 1px dashed #E00 !important;
+    border-left: 0 none !important;
+    position: fixed !important;
+    width: auto !important;
+}
+
+.firebugRuler{
+    position: absolute !important;
+}
+
+.firebugRulerH {
+    top: -15px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 14px !important;
+    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%13%88%00%00%00%0E%08%02%00%00%00L%25a%0A%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%04%F8IDATx%DA%EC%DD%D1n%E2%3A%00E%D1%80%F8%FF%EF%E2%AF2%95%D0D4%0E%C1%14%B0%8Fa-%E9%3E%CC%9C%87n%B9%81%A6W0%1C%A6i%9A%E7y%0As8%1CT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AATE9%FE%FCw%3E%9F%AF%2B%2F%BA%97%FDT%1D~K(%5C%9D%D5%EA%1B%5C%86%B5%A9%BDU%B5y%80%ED%AB*%03%FAV9%AB%E1%CEj%E7%82%EF%FB%18%BC%AEJ8%AB%FA'%D2%BEU9%D7U%ECc0%E1%A2r%5DynwVi%CFW%7F%BB%17%7Dy%EACU%CD%0E%F0%FA%3BX%FEbV%FEM%9B%2B%AD%BE%AA%E5%95v%AB%AA%E3E5%DCu%15rV9%07%B5%7F%B5w%FCm%BA%BE%AA%FBY%3D%14%F0%EE%C7%60%0EU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5JU%88%D3%F5%1F%AE%DF%3B%1B%F2%3E%DAUCNa%F92%D02%AC%7Dm%F9%3A%D4%F2%8B6%AE*%BF%5C%C2Ym~9g5%D0Y%95%17%7C%C8c%B0%7C%18%26%9CU%CD%13i%F7%AA%90%B3Z%7D%95%B4%C7%60%E6E%B5%BC%05%B4%FBY%95U%9E%DB%FD%1C%FC%E0%9F%83%7F%BE%17%7DkjMU%E3%03%AC%7CWj%DF%83%9An%BCG%AE%F1%95%96yQ%0Dq%5Dy%00%3Et%B5'%FC6%5DS%95pV%95%01%81%FF'%07%00%00%00%00%00%00%00%00%00%F8x%C7%F0%BE%9COp%5D%C9%7C%AD%E7%E6%EBV%FB%1E%E0(%07%E5%AC%C6%3A%ABi%9C%8F%C6%0E9%AB%C0'%D2%8E%9F%F99%D0E%B5%99%14%F5%0D%CD%7F%24%C6%DEH%B8%E9rV%DFs%DB%D0%F7%00k%FE%1D%84%84%83J%B8%E3%BA%FB%EF%20%84%1C%D7%AD%B0%8E%D7U%C8Y%05%1E%D4t%EF%AD%95Q%BF8w%BF%E9%0A%BF%EB%03%00%00%00%00%00%00%00%00%00%B8vJ%8E%BB%F5%B1u%8Cx%80%E1o%5E%CA9%AB%CB%CB%8E%03%DF%1D%B7T%25%9C%D5(%EFJM8%AB%CC'%D2%B2*%A4s%E7c6%FB%3E%FA%A2%1E%80~%0E%3E%DA%10x%5D%95Uig%15u%15%ED%7C%14%B6%87%A1%3B%FCo8%A8%D8o%D3%ADO%01%EDx%83%1A~%1B%9FpP%A3%DC%C6'%9C%95gK%00%00%00%00%00%00%00%00%00%20%D9%C9%11%D0%C0%40%AF%3F%EE%EE%92%94%D6%16X%B5%BCMH%15%2F%BF%D4%A7%C87%F1%8E%F2%81%AE%AAvzr%DA2%ABV%17%7C%E63%83%E7I%DC%C6%0Bs%1B%EF6%1E%00%00%00%00%00%00%00%00%00%80cr%9CW%FF%7F%C6%01%0E%F1%CE%A5%84%B3%CA%BC%E0%CB%AA%84%CE%F9%BF)%EC%13%08WU%AE%AB%B1%AE%2BO%EC%8E%CBYe%FE%8CN%ABr%5Dy%60~%CFA%0D%F4%AE%D4%BE%C75%CA%EDVB%EA(%B7%F1%09g%E5%D9%12%00%00%00%00%00%00%00%00%00H%F6%EB%13S%E7y%5E%5E%FB%98%F0%22%D1%B2'%A7%F0%92%B1%BC%24z3%AC%7Dm%60%D5%92%B4%7CEUO%5E%F0%AA*%3BU%B9%AE%3E%A0j%94%07%A0%C7%A0%AB%FD%B5%3F%A0%F7%03T%3Dy%D7%F7%D6%D4%C0%AAU%D2%E6%DFt%3F%A8%CC%AA%F2%86%B9%D7%F5%1F%18%E6%01%F8%CC%D5%9E%F0%F3z%88%AA%90%EF%20%00%00%00%00%00%00%00%00%00%C0%A6%D3%EA%CFi%AFb%2C%7BB%0A%2B%C3%1A%D7%06V%D5%07%A8r%5D%3D%D9%A6%CAu%F5%25%CF%A2%99%97zNX%60%95%AB%5DUZ%D5%FBR%03%AB%1C%D4k%9F%3F%BB%5C%FF%81a%AE%AB'%7F%F3%EA%FE%F3z%94%AA%D8%DF%5B%01%00%00%00%00%00%00%00%00%00%8E%FB%F3%F2%B1%1B%8DWU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*UiU%C7%BBe%E7%F3%B9%CB%AAJ%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5*%AAj%FD%C6%D4%5Eo%90%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5%86%AF%1B%9F%98%DA%EBm%BBV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%AD%D6%E4%F58%01%00%00%00%00%00%00%00%00%00%00%00%00%00%40%85%7F%02%0C%008%C2%D0H%16j%8FX%00%00%00%00IEND%AEB%60%82") repeat-x !important;
+    border-top: 1px solid #BBBBBB !important;
+    border-right: 1px dashed #BBBBBB !important;
+    border-bottom: 1px solid #000000 !important;
+}
+
+.firebugRulerV {
+    top: 0 !important;
+    left: -15px !important;
+    width: 14px !important;
+    height: 100% !important;
+    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%0E%00%00%13%88%08%02%00%00%00%0E%F5%CB%10%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%06~IDATx%DA%EC%DD%D1v%A20%14%40Qt%F1%FF%FF%E4%97%D9%07%3BT%19%92%DC%40(%90%EEy%9A5%CB%B6%E8%F6%9Ac%A4%CC0%84%FF%DC%9E%CF%E7%E3%F1%88%DE4%F8%5D%C7%9F%2F%BA%DD%5E%7FI%7D%F18%DDn%BA%C5%FB%DF%97%BFk%F2%10%FF%FD%B4%F2M%A7%FB%FD%FD%B3%22%07p%8F%3F%AE%E3%F4S%8A%8F%40%EEq%9D%BE8D%F0%0EY%A1Uq%B7%EA%1F%81%88V%E8X%3F%B4%CEy%B7h%D1%A2E%EBohU%FC%D9%AF2fO%8BBeD%BE%F7X%0C%97%A4%D6b7%2Ck%A5%12%E3%9B%60v%B7r%C7%1AI%8C%BD%2B%23r%00c0%B2v%9B%AD%CA%26%0C%1Ek%05A%FD%93%D0%2B%A1u%8B%16-%95q%5Ce%DCSO%8E%E4M%23%8B%F7%C2%FE%40%BB%BD%8C%FC%8A%B5V%EBu%40%F9%3B%A72%FA%AE%8C%D4%01%CC%B5%DA%13%9CB%AB%E2I%18%24%B0n%A9%0CZ*Ce%9C%A22%8E%D8NJ%1E%EB%FF%8F%AE%CAP%19*%C3%BAEKe%AC%D1%AAX%8C*%DEH%8F%C5W%A1e%AD%D4%B7%5C%5B%19%C5%DB%0D%EF%9F%19%1D%7B%5E%86%BD%0C%95%A12%AC%5B*%83%96%CAP%19%F62T%86%CAP%19*%83%96%CA%B8Xe%BC%FE)T%19%A1%17xg%7F%DA%CBP%19*%C3%BA%A52T%86%CAP%19%F62T%86%CA%B0n%A9%0CZ%1DV%C6%3D%F3%FCH%DE%B4%B8~%7F%5CZc%F1%D6%1F%AF%84%F9%0F6%E6%EBVt9%0E~%BEr%AF%23%B0%97%A12T%86%CAP%19%B4T%86%CA%B8Re%D8%CBP%19*%C3%BA%A52huX%19%AE%CA%E5%BC%0C%7B%19*CeX%B7h%A9%0C%95%E1%BC%0C%7B%19*CeX%B7T%06%AD%CB%5E%95%2B%BF.%8F%C5%97%D5%E4%7B%EE%82%D6%FB%CF-%9C%FD%B9%CF%3By%7B%19%F62T%86%CA%B0n%D1R%19*%A3%D3%CA%B0%97%A12T%86uKe%D0%EA%B02*%3F1%99%5DB%2B%A4%B5%F8%3A%7C%BA%2B%8Co%7D%5C%EDe%A8%0C%95a%DDR%19%B4T%C66%82fA%B2%ED%DA%9FC%FC%17GZ%06%C9%E1%B3%E5%2C%1A%9FoiB%EB%96%CA%A0%D5qe4%7B%7D%FD%85%F7%5B%ED_%E0s%07%F0k%951%ECr%0D%B5C%D7-g%D1%A8%0C%EB%96%CA%A0%A52T%C6)*%C3%5E%86%CAP%19%D6-%95A%EB*%95q%F8%BB%E3%F9%AB%F6%E21%ACZ%B7%22%B7%9B%3F%02%85%CB%A2%5B%B7%BA%5E%B7%9C%97%E1%BC%0C%EB%16-%95%A12z%AC%0C%BFc%A22T%86uKe%D0%EA%B02V%DD%AD%8A%2B%8CWhe%5E%AF%CF%F5%3B%26%CE%CBh%5C%19%CE%CB%B0%F3%A4%095%A1%CAP%19*Ce%A8%0C%3BO*Ce%A8%0C%95%A12%3A%AD%8C%0A%82%7B%F0v%1F%2FD%A9%5B%9F%EE%EA%26%AF%03%CA%DF9%7B%19*Ce%A8%0C%95%A12T%86%CA%B8Ze%D8%CBP%19*Ce%A8%0C%95%D1ae%EC%F7%89I%E1%B4%D7M%D7P%8BjU%5C%BB%3E%F2%20%D8%CBP%19*Ce%A8%0C%95%A12T%C6%D5*%C3%5E%86%CAP%19*Ce%B4O%07%7B%F0W%7Bw%1C%7C%1A%8C%B3%3B%D1%EE%AA%5C%D6-%EBV%83%80%5E%D0%CA%10%5CU%2BD%E07YU%86%CAP%19*%E3%9A%95%91%D9%A0%C8%AD%5B%EDv%9E%82%FFKOee%E4%8FUe%A8%0C%95%A12T%C6%1F%A9%8C%C8%3D%5B%A5%15%FD%14%22r%E7B%9F%17l%F8%BF%ED%EAf%2B%7F%CF%ECe%D8%CBP%19*Ce%A8%0C%95%E1%93~%7B%19%F62T%86%CAP%19*Ce%A8%0C%E7%13%DA%CBP%19*Ce%A8%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4%AE%A4%F5%25%C0%00%DE%BF%5C'%0F%DA%B8q%00%00%00%00IEND%AEB%60%82") repeat-y !important;
+    border-left: 1px solid #BBBBBB !important;
+    border-right: 1px solid #000000 !important;
+    border-bottom: 1px dashed #BBBBBB !important;
+}
+
+.overflowRulerX > .firebugRulerV {
+    left: 0 !important;
+}
+
+.overflowRulerY > .firebugRulerH {
+    top: 0 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.fbProxyElement {
+    position: fixed !important;
+    pointer-events: auto !important;
+}
+</style></head>
+
+
+<body style="font-size: 90%;" background="albopaginatv_files/background.jpg">
+
+<table class="testonormale" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr valign="top">
+
+<td><img src="albopaginatv_files/templogo.jpg" alt="" border="0" height="123" width="587"></td>
+<td width="100%">
+  <p align="right">
+  <b><font face="Calibri" size="1">
+  
+                                                                                                
+	  <a href="admin/autenticazione.asp">LOG-IN</a>                                                                                              
+                                                                                                                     
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="help.asp" target="_blank">AIUTO                                                        
+  ONLINE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="info_accessibilita.asp" target="_blank">                                                       
+  INFO ACCESSIBILITA'</a>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp; <a href="#" onclick="changeFontSize(1); return false;" class="larger"><img style="border:0 margin:0 padding:0;" src="albopaginatv_files/resizer_01.jpg" alt="+"></a>                             
+<a href="#" onclick="changeFontSize(-1); return false;" class="smaller"><img style="border:0 margin:0 padding:0;" src="albopaginatv_files/resizer_02.jpg" alt="-"></a>                               
+<a href="#" onclick="revertStyles(); return false;" class="reset"><img style="border:0 margin:0 padding:0;" src="albopaginatv_files/resizer_03.jpg" alt="reset"></a>                               
+</font></b>                        
+  </p>
+</td>
+</tr>
+</tbody></table>
+
+<table class="bgtopbar" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr valign="top">
+<td valign="middle" width="100%">
+  <p class="testonormale" align="left"><b>&nbsp; </b><a href="infoente.asp"><b>Informazioni sull'Ente</b></a><b>&nbsp;&nbsp;&nbsp;&nbsp;                                                                   
+  |&nbsp;&nbsp;&nbsp;&nbsp; <a href="mappasito.asp">Mappa del sito</a>&nbsp;&nbsp;&nbsp;&nbsp;                                                                   
+  |&nbsp;&nbsp;&nbsp;&nbsp; </b><a href="inviaemail.asp"><b>Invia                                                                   
+  un e-mail all'ente</b></a></p>                                                                  
+</td>
+</tr>
+</tbody></table>
+
+<table class="testonormale" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr valign="top">
+
+<td width="201"><br>
+&nbsp;»&nbsp;<a href="default.asp"><b>Home   
+  page</b></a><br>
+<img src="albopaginatv_files/menubar.jpg" alt="" border="0" height="11" width="201"><br>
+  &nbsp;»&nbsp;<a href="infoente.asp"><b>Informazioni sull'Ente</b></a><br>
+<img src="albopaginatv_files/menubar.jpg" alt="" border="0" height="11" width="201"><br>
+  &nbsp;»&nbsp;<a href="contatti.asp"><b>Contatti relativi
+  all'Ente</b></a><br>
+<img src="albopaginatv_files/menubar.jpg" alt="" border="0" height="11" width="201"><br>
+  &nbsp;»&nbsp;<a href="admin"><b>Amministrazione                                  
+  del Portale</b></a><br>                                  
+<img src="albopaginatv_files/menubar.jpg" alt="" border="0" height="11" width="201"><br>
+&nbsp;»&nbsp;<a href="ricerca_atti.asp"><b>Ricerca                                  
+  atti</b></a><br>
+  <img src="albopaginatv_files/menubar.jpg" alt="" border="0" height="11" width="201"><br>
+&nbsp;»&nbsp;<a href="ricerca_atti_tipologia.asp"><b>Ricerca                                  
+  per tipologia di atti</b></a><br>                                  
+<img src="albopaginatv_files/menubar.jpg" alt="" border="0" height="11" width="201"><br>
+&nbsp;»&nbsp;<a href="visualizza_atti_recenti.asp"><b>Visualizza                                  
+  atti recenti</b></a><br>                                  
+<img src="albopaginatv_files/menubar.jpg" alt="" border="0" height="11" width="201"><br>
+&nbsp;»&nbsp;<a href="atti_archivio.asp"><b>Archivio                                               
+  atti non in vigore</b></a><br>                                               
+<img src="albopaginatv_files/menubar.jpg" alt="" border="0" height="11" width="201"><br>
+</td>
+
+<td width="100%">
+	<table class="testonormale" border="0" cellpadding="10" cellspacing="0" width="100%">
+		<tbody><tr valign="top">
+			<td>
+&nbsp;
+<div align="center">
+  <table class="testonormale" border="0" cellpadding="0" cellspacing="0" width="80%">
+    <tbody><tr>
+      <td class="bgsxsup" height="1" valign="top" width="17">
+        <p align="left"></p></td>
+      <td class="bgtablinearic" height="1" valign="top" width="705">
+        &nbsp;</td>
+      <td class="bgdxsup" height="1" valign="top" width="19">
+        &nbsp;</td>
+    </tr>
+    <tr>
+      <td class="bgtablinesx" height="51" valign="top" width="17">
+        &nbsp;</td>
+      <td class="bgsfondotab" height="130" valign="top" width="705">
+        <blockquote>
+
+
+<div align="left">
+  <form action="ricerca_atti.asp" method="get">
+
+  <table class="testonormale" border="0" cellpadding="0" cellspacing="3" width="50%">
+    <tbody><tr>
+      <td style="width: 39%" class="TestoNormale">Oggetto</td>
+      <td class="TestoNormale" width="73%">
+        <input class="cmdflat" name="Oggetto" size="28" type="text">
+		</td>
+    </tr>
+    <tr>
+      <td style="width: 39%" class="TestoNormale">Tipologia</td>
+      <td class="TestoNormale" width="73%">
+		<select size="1" name="Tipologia" class="cmdflat">
+        <option selected="selected">-</option>
+
+
+          
+   <option value="17"></option>
+
+   <option value="57">Accertamenti</option>
+
+   <option value="14">Albi Comunali</option>
+
+   <option value="48">Atti di Pignoramento</option>
+
+   <option value="15">Avvisi</option>
+
+   <option value="21">Avvisi Gare di Appalto</option>
+
+   <option value="1">Bandi</option>
+
+   <option value="42">Bollettini</option>
+
+   <option value="20">Calendari Reperibilita'</option>
+
+   <option value="58">Cancellazioni</option>
+
+   <option value="54">Comunicazioni</option>
+
+   <option value="27">Concessioni</option>
+
+   <option value="41">Concessioni Edilizie con contributo</option>
+
+   <option value="24">Concessioni Edilizie in Sanatoria</option>
+
+   <option value="33">Convocazioni Assemblee</option>
+
+   <option value="11">Convocazioni Consiglio Comunale</option>
+
+   <option value="50">Decreti</option>
+
+   <option value="25">Decreti di Concessione</option>
+
+   <option value="52">Delibere</option>
+
+   <option value="4">Delibere di Consiglio</option>
+
+   <option value="5">Delibere di Giunta</option>
+
+   <option value="47">Determinazioni</option>
+
+   <option value="8">Determine Dirigenziali</option>
+
+   <option value="10">Determine Sindacali</option>
+
+   <option value="31">Elenchi</option>
+
+   <option value="18">Elenchi di cui al comma 7 art.7 legge 47/85</option>
+
+   <option value="22">Graduatorie</option>
+
+   <option value="44">Ingiunzioni</option>
+
+   <option value="51">Integrazioni Ordine del Giorno</option>
+
+   <option value="53">Intimazioni</option>
+
+   <option value="45">Istanze</option>
+
+   <option value="6">Licenze Commerciali</option>
+
+   <option value="29">Liste</option>
+
+   <option value="35">Manifesti</option>
+
+   <option value="26">Notifiche ai sensi dell'Art. 60 D.P.R.</option>
+
+   <option value="56">Notifiche ai sensi dell'Art. 60 lett."e" del D.P.R. 600/73</option>
+
+   <option value="38">Notifiche ai sensi dell'art.140</option>
+
+   <option value="19">Notifiche ai sensi dell'art.143 </option>
+
+   <option value="39">Ordinanze</option>
+
+   <option value="3">Ordinanze Polizia Municipale</option>
+
+   <option value="9">Ordinanze Sindacali</option>
+
+   <option value="61">Piani turno</option>
+
+   <option value="40">Progetti</option>
+
+   <option value="60">Programmi</option>
+
+   <option value="32">Provvedimenti</option>
+
+   <option value="7">Pubblicazioni di Matrimonio</option>
+
+   <option value="55">Relazioni</option>
+
+   <option value="46">Rendiconti</option>
+
+   <option value="30">Revisioni</option>
+
+   <option value="28">Richieste concessioni</option>
+
+   <option value="62">Risultati Elezioni</option>
+
+   <option value="34">Schemi</option>
+
+   <option value="49">Sentenze</option>
+
+   <option value="43">Trasmissioni</option>
+
+   <option value="36">Verbali</option>
+
+   <option value="23">Verbali di gara</option>
+
+   <option value="59">Verifiche</option>
+ </select></td> 
+    </tr>
+    <tr>
+      <td style="width: 39%" class="TestoNormale">Mittente</td>
+      <td width="73%"><input class="cmdflat" name="Mittente" size="28" type="text"></td>
+    </tr>
+    <tr>
+      <td style="width: 39%" class="TestoNormale">Data dell'atto</td>
+      <td width="73%"><input class="cmdflat" name="DataAtto" size="14" type="text"></td>
+    </tr>
+    <tr>
+      <td style="width: 39%" class="TestoNormale"></td>
+      <td width="73%"></td>
+    </tr>
+    <tr>
+      <td style="width: 39%" class="TestoNormale">
+        <p align="center">&nbsp;&nbsp;&nbsp;</p></td>
+      <td style="width: 39%" class="TestoNormale">
+        <input value=" cerca " name="cerca" class="button" type="submit">&nbsp;&nbsp;&nbsp;
+        <input value="annulla" name="annulla" class="button" type="reset"></td>
+    </tr>
+  </tbody></table>
+</form>
+</div>
+
+        </blockquote>
+      </td>
+      <td class="bgtablinedx" height="26" valign="top" width="19">
+        &nbsp;</td>
+    </tr>
+    <tr>
+      <td class="bgsxinf" height="8" valign="top" width="17">
+        &nbsp;</td>
+      <td class="bgtablineainf" height="1" valign="top" width="705">
+        &nbsp;</td>
+      <td class="bgdxinf" height="21" valign="top" width="19">
+        &nbsp;</td>
+    </tr>
+  </tbody></table>
+</div>
+
+<div align="center">
+  &nbsp;
+</div>
+
+<!--RISULTATI RICERCA-->
+
+ 
+
+<div align="center">
+    <table class="testonormale" border="0" cellpadding="0" cellspacing="0" width="80%">
+    <tbody><tr>
+      <td class="bgsxsup" height="1" valign="top" width="17">
+        <p align="left"></p></td>
+      <td class="bgattirecentisup" height="1" valign="top" width="705">
+        &nbsp;</td>
+      <td class="bgdxsup" height="1" valign="top" width="19">
+        &nbsp;</td>
+    </tr>
+    <tr>
+      <td class="bgtablinesx" height="51" valign="top" width="17">
+        &nbsp;</td>
+      <td class="bgsfondotab" height="130" valign="top" width="705">
+ 
+
+
+
+<font face="Calibri" size="3">&nbsp;</font>
+
+<div align="center">
+  <center>
+  <center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><center>
+    </center><table class="testonormale" border="0" cellpadding="3" cellspacing="0" width="95%">
+
+
+	
+    <tbody><tr>
+	
+      	<td bgcolor="#C4E0FF" width="85%"><a href="visualizza_atto.asp?idatto=4137"><b>Pubblicazione di matrimonio Nicosia Giovanni e Accetta Caterina</b></a><br><font size="2">(pubblicato dal 28/06/2013 al 10/07/2013)<br><b>Stato:</b> In corso di pubblicazione</font></td>
+	
+  
+      <td bgcolor="#C4E0FF" width="40%">
+        <p align="right">del: 28/06/2013</p></td>                                                                                                   
+    </tr>
+  <tr>
+      <td bgcolor="#E6FAFF" width="85%">Tipologia:&nbsp; <a href="ricerca_atti.asp?tipologia=7">Pubblicazioni di Matrimonio</a></td>                                                                                                   
+  
+	
+      <td bgcolor="#E6FAFF" nowrap="nowrap" width="40%"> </td>
+	
+    </tr>
+    <tr>
+      <td colspan="2" class="bgtablineainf" width="100%"><font size="1">&nbsp;</font></td>
+    </tr>
+
+	
+    <tr>
+	
+	      <td bgcolor="#C4E0FF" width="85%"><b><a href="visualizza_atto.asp?idatto=4138"><b>Impegno liquidazione ricovero disabile Sig.ra R.I. in adeguata ComunitÃ&nbsp; Alloggi...</b></a></b><br><font size="2">(pubblicato dal 28/06/2013 al 13/07/2013)<br><b>Stato:</b> In corso di pubblicazione</font></td>
+	
+  
+      <td bgcolor="#C4E0FF" width="40%">
+        <p align="right">del: 24/06/2013</p></td>                                                                                                   
+    </tr>
+  <tr>
+      <td bgcolor="#E6FAFF" width="85%">Tipologia:&nbsp; <a href="ricerca_atti.asp?tipologia=8">Determine Dirigenziali</a></td>                                                                                                   
+  
+	
+      <td bgcolor="#E6FAFF" nowrap="nowrap" width="40%"> </td>
+	
+    </tr>
+    <tr>
+      <td colspan="2" class="bgtablineainf" width="100%"><font size="1">&nbsp;</font></td>
+    </tr>
+
+	
+    <tr>
+	
+	      <td bgcolor="#C4E0FF" width="85%"><b><a href="visualizza_atto.asp?idatto=4139"><b>Pagamento competenze per mansioni di supporto al R.U.P. relativo ai lavori di Ma...</b></a></b><br><font size="2">(pubblicato dal 28/06/2013 al 13/07/2013)<br><b>Stato:</b> In corso di pubblicazione</font></td>
+	
+  
+      <td bgcolor="#C4E0FF" width="40%">
+        <p align="right">del: 24/06/2013</p></td>                                                                                                   
+    </tr>
+  <tr>
+      <td bgcolor="#E6FAFF" width="85%">Tipologia:&nbsp; <a href="ricerca_atti.asp?tipologia=8">Determine Dirigenziali</a></td>                                                                                                   
+  
+	
+      <td bgcolor="#E6FAFF" nowrap="nowrap" width="40%"> </td>
+	
+    </tr>
+    <tr>
+      <td colspan="2" class="bgtablineainf" width="100%"><font size="1">&nbsp;</font></td>
+    </tr>
+
+	
+    <tr>
+	
+      	<td bgcolor="#C4E0FF" width="85%"><a href="visualizza_atto.asp?idatto=4140"><b>Raccolta di firme per i referendum riguardanti 11 argomenti</b></a><br><font size="2">(pubblicato dal 28/06/2013 al 29/07/2013)<br><b>Stato:</b> In corso di pubblicazione</font></td>
+	
+  
+      <td bgcolor="#C4E0FF" width="40%">
+        <p align="right">del: 28/06/2013</p></td>                                                                                                   
+    </tr>
+
+  </tbody></table>
+</center></div>
+
+ 
+      </td>
+      <td class="bgtablinedx" height="26" valign="top" width="19">
+        &nbsp;</td>
+    </tr>
+    <tr>
+      <td class="bgsxinf" height="8" valign="top" width="17">
+        &nbsp;</td>
+      <td class="bgtablineainf" height="1" valign="top" width="705">
+        &nbsp;</td>
+      <td class="bgdxinf" height="21" valign="top" width="19">
+        &nbsp;</td>
+    </tr>
+  </tbody></table>
+
+</div>
+
+<!-- Fine risultato ricerca -->
+
+
+<div align="center">
+  &nbsp;
+</div>
+<div align="center">
+  <center>
+  <table class="testonormale" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody><tr>
+      <td class="bgtablineainf" height="1" width="100%">&nbsp;</td>
+    </tr>
+    <tr>
+      <td height="1" width="100%">
+        <div align="center">
+          <center>
+          <table class="testonormale" border="0" cellpadding="0" cellspacing="0" width="80">
+            <tbody><tr>
+              <td>
+                <table class="testonormale">
+                  <tbody><tr>
+                    <td valign="top"><img src="albopaginatv_files/valid-css.png" alt="VALID W3C CSS" height="15" width="80"></td>
+                    <td colspan="2" valign="top"><img src="albopaginatv_files/valid-xhtml11.png" alt="VALID W3C HTML4.1" height="15" width="87"></td>
+                    <td colspan="2" valign="top"><!--DWLayoutEmptyCell-->
+                    </td>
+                </tr></tbody></table>
+              </td>
+            </tr>
+          </tbody></table>
+          </center>
+        </div>
+      </td>
+    </tr>
+  </tbody></table>
+</center>
+</div>
+<p align="center"><font color="#808080" face="Calibri" size="1">© Sistemia srl</font></p>            
+			</td>
+		</tr>
+	</tbody></table>
+</td>
+
+</tr>
+</tbody></table>
+
+
+
+
+
+
+
+
+
+<div style="left: 0px ! important; top: -393.8px ! important; width: 1207px ! important; height: 3547.8px ! important; border-radius: 0px 0px 0px 0px ! important; box-shadow: 0px 0px 2px 2px highlight ! important;" class="firebugResetStyles firebugBlockBackgroundColor"><div style="width: 100% ! important; height: 100% ! important; background-color: transparent ! important; opacity: 0.6 ! important;" class="firebugResetStyles"></div></div></body></html>
